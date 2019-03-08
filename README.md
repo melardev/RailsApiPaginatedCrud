@@ -17,10 +17,7 @@
       - [The next come are](#the-next-come-are-2)
     + [Client side implementations](#client-side-implementations-2)
       - [The next come are](#the-next-come-are-3)
-- [Follow me](#follow-me)
-  * [Project setup](#project-setup)
-    + [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
-    
+- [Follow me](#social-media-links)  
 
 # Introduction
 This is a project mean to be used for learning basic CRUD operations and Pagination using
@@ -144,34 +141,6 @@ This client side E-commerce application is also implemented using other client s
 - [Twitter](https://twitter.com/@melardev) I share tips on programming
 
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 # Steps used to create this project
 ```bash
 rails new ApiCrud --api --database=sqlite3
@@ -181,8 +150,7 @@ rails db:seed
 rails generate controller Todos
 ```
 
-# Follow me
+# Social media links
 - [Youtube Channel](https://youtube.com/melardev) I publish videos mainly on programming
 - [Blog](http://melardev.com) Sometimes I publish the source code there before Github
 - [Twitter](https://twitter.com/@melardev) I share tips on programming
-- JBuilder
