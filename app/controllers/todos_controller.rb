@@ -51,7 +51,7 @@ class TodosController < ApplicationController
   def destroy
     @todo.destroy
     dto = SuccessResponseDto.new 'Deleted successfully'
-    render json: dto, status: :unprocessable_entity
+    render json: dto, status: :ok
   end
 
   def destroy_all
@@ -60,7 +60,7 @@ class TodosController < ApplicationController
     # delete will only delete the current object,no the associated models
     Todo.destroy_all
     dto = SuccessResponseDto.new 'Deleted all todos successfully'
-    render json: dto, status: :unprocessable_entity
+    render json: dto, status: :ok
   end
 
   private
@@ -80,8 +80,8 @@ class TodosController < ApplicationController
   end
 
   def set_page
-    @page = params[:page] || 1
-    @page_size = params[:page_size] || 8
+    @page = (params[:page] || 1).to_i
+    @page_size = (params[:page_size] || 8).to_i
     @offset = @page_size * (@page - 1)
   end
 
